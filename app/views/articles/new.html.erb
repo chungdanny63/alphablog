@@ -1,0 +1,18 @@
+<h1>Create an article</h1>
+
+<%= form_for @article do |g| %>
+    <p>
+        <%= g.label :title %> <br/>
+        <!--the br tag moves the text field so that it is below the title>-->
+        <%= g.text_field :title %>
+    </p>
+     <p>
+        <%= g.label :description %> <br/>
+        <%= g.text_area :description %>
+     </p>
+     <p>
+         <%= g.submit %>
+         <!--submit creates a button-->
+     </p>
+     
+<% end %>
