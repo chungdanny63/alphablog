@@ -1,4 +1,4 @@
-<h1>Showing selected article</h1>
+<h1>Article</h1>
 
 <p>
     Title: <%= @article.title %>
@@ -7,5 +7,8 @@
     Description: <%= @article.description %>
 </p>
 
-<%= link_to "Edit", edit_article_path(@article) %> |
-<%= link_to "Back", articles_path %>
+ <%= link_to "Edit", edit_article_path, :class => 'btn btn-default' %>
+ <%= link_to "Back", articles_path , :class => 'btn btn-default' %>
+ <p>
+     <td><%= link_to "Delete", article_path, method: :delete, data: {confirm: "Are you sure?"}, :class => 'btn btn-danger' %></td>
+ </p>
