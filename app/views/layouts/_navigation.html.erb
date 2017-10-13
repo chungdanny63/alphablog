@@ -16,7 +16,12 @@
     		<!-- alwlows us to create a new option on navbar -->
     		<li><%= link_to "Home", root_path %></li>
     	</ul>
-
+        
+        <ul class ="nav navbar-nav">
+    		<!-- alwlows us to create a new option on navbar -->
+    		<li><%= link_to "Posts", articles_path %></li>
+    	</ul>
+    	
     	<ul class ="nav navbar-nav navbar-right">
     		<!-- creates the new option on the right to navigate -->
     		<li><%= link_to "Create Post", new_article_path%></li>
